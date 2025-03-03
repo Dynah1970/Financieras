@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarjeta Web - Dynah Gómez</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-        }
-        .card {
+      
+      body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card {
             background: white;
             width: 350px;
             margin: auto;
@@ -77,16 +78,15 @@
             align-items: center;
         }
         .partners img {
-            width: 90%;
-            max-width: 320px;
-            margin: 2px 0;
-            display: block;
-        }
-        .financieras {
+    width: 100%;
+    max-width: 320px;
+}
+
+.financieras {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra las imágenes */
-    gap: 5px; /* Espacio entre imágenes */
+    justify-content: center;
+    gap: 10px;
 }
 
 .financieras img {
@@ -94,6 +94,23 @@
     height: auto; /* Mantiene la proporción */
     object-fit: contain; /* Evita que las imágenes se recorten */
     border-radius: 5px; /* Opcional: bordes redondeados */
+}
+@media (max-width: 480px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+    .service {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .contact a {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .financieras img {
+        width: 60px;
+    }
 }
 
     </style>
